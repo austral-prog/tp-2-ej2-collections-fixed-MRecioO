@@ -17,4 +17,3 @@ public class Sets {
         return drink + " Mocktail";
     }
 }
-
