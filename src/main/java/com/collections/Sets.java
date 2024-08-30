@@ -9,5 +9,12 @@ public class Sets {
     private static final Set<String> ALCOHOLS = new HashSet<>(Arrays.asList("whiskey", "whisky", "white rum", "dark rum", "bourbon", "rye", "scotch", "vodka",
             "tequila", "gin", "dry vermouth", "sweet vermouth", "prosecco","aperol", "brandy", "mezcal",
             "triple sec", "coffee liqueur", "almond liqueur", "champagne", "orange curacao", "rum"));
-
+    public static String checkDrinks(String drink, List<String> ings) {
+        for (String ing : ings)
+            if (ALCOHOLS.contains(ing)){
+                return drink + " Cocktail";
+            }
+        return drink + " Mocktail";
+    }
 }
+
